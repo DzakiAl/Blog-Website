@@ -1,0 +1,487 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* index.blade.php */
+.body {
+    margin: 4vw 25vw 4vw 25vw;
+}
+
+.blog {
+    box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+    width: 50vw;
+    height: auto;
+    border-radius: 0.25vw;
+    margin-bottom: 5vw;
+}
+
+.image {
+    padding: 1vw;
+    width: 50vw;
+    height: auto;
+}
+
+.blog-info {
+    padding: 0 1vw 1vw 1vw;
+}
+
+.blog-title {
+    font-size: 2.5vw;
+}
+
+.date {
+    font-size: 1.25vw;
+}
+
+.user {
+    font-size: 1.25vw;
+}
+
+.button-add {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    line-height: 3vw;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    margin: 2vw 0 0 0;
+    transition: 0.5s all ease-in-out;
+    font-size: 1.25vw;
+}
+
+.button-add:hover {
+    background-color: #474747;
+    transition: 0.5s all ease-in-out;
+}
+
+.button-delete {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    width: 6vw;
+    height: 2.8vw;
+    border-radius: 0.5vw;
+    margin: 1vw 0 0 0;
+    transition: 0.5s all ease-in-out;
+    border: none;
+}
+
+.button-delete:hover {
+    background-color: #474747;
+    transition: 0.5s all ease-in-out;
+}
+
+/* create.blade.php */
+.form {
+    width: 50vw;
+    height: auto;
+    margin: 2vw 25vw 0vw 25vw;
+}
+
+.input {
+    width: 50vw;
+    height: auto;
+    resize: none;
+    font-size: 1.25vw;
+    margin-bottom: 1vw;
+}
+
+.button-cancel {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    line-height: 2.8vw;
+    width: 6vw;
+    height: 2.8vw;
+    border-radius: 0.5vw;
+    margin: 0.5vw 1vw 0 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.button-cancel:hover {
+    background-color: #474747;
+    transition: 0.5s all ease-in-out;
+}
+
+.button-submit {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    width: 6vw;
+    height: 2.8vw;
+    border-radius: 0.5vw;
+    margin: 0.5vw 1vw 0 0;
+    transition: 0.5s all ease-in-out;
+    border: none;
+}
+
+.button-submit:hover {
+    background-color: #474747;
+    transition: 0.5s all ease-in-out;
+}
+
+.option {
+    display: flex;
+}
+
+/* show.blade.php */
+.image-blog {
+    width: 50vw;
+    height: auto;
+    margin: 0 0 1vw 0;
+    border-radius: 0.5vw;
+}
+
+.title-blog {
+    font-size: 4vw;
+}
+
+.date-blog {
+    font-size: 1.5vw;
+}
+
+.user-blog {
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.text-blog {
+    font-size: 1.25vw;
+}
+
+/* comment */
+.comment-container {
+    margin: 2.5vw 0 2.5vw 0;
+}
+
+.comment-form {
+    margin: 0 0 2vw 0;
+}
+
+.title-comment-form {
+    font-size: 2vw;
+}
+
+.comment-input {
+    width: 50vw;
+    height: auto;
+    font-size: 1.25vw;
+    margin: 0 0 1vw 0;
+}
+
+.comment-title {
+    font-size: 2vw;
+}
+
+.comment {
+    width: 50vw;
+    margin: 2vw 0 2vw 0;
+    padding: 1vw;
+    box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+    border-radius: 0.5vw;
+    font-size: 1.25vw;
+}
+
+.link {
+    font-size: 1.25vw;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
+    /* index.blade.php */
+    .body {
+        margin: 5vw;
+    }
+
+    .blog {
+        width: 90vw;
+        height: auto;
+    }
+
+    .image {
+        padding: 1vw;
+        width: 90vw;
+        height: auto;
+    }
+
+    .blog-info {
+        padding: 0 1vw 1vw 1vw;
+    }
+
+    .blog-title {
+        font-size: 5vw;
+    }
+
+    .date {
+        font-size: 2.5vw;
+    }
+
+    .user {
+        font-size: 2.5vw;
+    }
+
+    .button-add {
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+        line-height: 8vw;
+    }
+
+    .button-delete {
+        width: 15vw;
+        height: 7vw;
+        font-size: 2.5vw;
+        line-height: 7vw;
+    }
+
+    /* create.blade.php */
+    .form {
+        width: 90vw;
+        margin: 5vw 5vw 0vw 5vw;
+    }
+
+    .input {
+        width: 90vw;
+        ;
+        resize: none;
+        font-size: 3.5vw;
+        margin-bottom: 1vw;
+    }
+
+    .button-cancel {
+        font-size: 2.5vw;
+        line-height: 6vw;
+        width: 18vw;
+        height: 6vw;
+        margin: 0.5vw 1vw 0 0;
+    }
+
+    .button-submit {
+        font-size: 2.5vw;
+        width: 18vw;
+        height: 6vw;
+        margin: 0.5vw 1vw 0 0;
+    }
+
+    /* show.blade.php */
+    .image-blog {
+        width: 90vw;
+        height: auto;
+        margin: 0 0 1vw 0;
+    }
+
+    .title-blog {
+        font-size: 8vw;
+    }
+
+    .date-blog {
+        font-size: 3vw;
+    }
+
+    .user-blog {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .text-blog {
+        font-size: 4vw;
+    }
+
+    /* comment */
+    .comment-container {
+        margin: 2.5vw 0 2.5vw 0;
+    }
+
+    .comment-form {
+        margin: 0 0 2vw 0;
+    }
+
+    .title-comment-form {
+        font-size: 3vw;
+    }
+
+    .comment-input {
+        width: 90vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin: 0 0 0.25vw 0;
+    }
+
+    .comment-title {
+        font-size: 3vw;
+        margin: 4vw 0 0 0;
+    }
+
+    .comment {
+        width: 90vw;
+        margin: 2vw 0 5vw 0;
+        padding: 2vw;
+        box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+    }
+
+    .link {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* index.blade.php */
+    .body {
+        margin: 5vw;
+    }
+
+    .button-add {
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+        line-height: 8vw;
+    }
+
+    .blog {
+        width: 90vw;
+        height: auto;
+    }
+
+    .image {
+        padding: 1vw;
+        width: 90vw;
+        height: auto;
+    }
+
+    .blog-info {
+        padding: 0 1vw 1vw 1vw;
+    }
+
+    .blog-title {
+        font-size: 5vw;
+    }
+
+    .date {
+        font-size: 2.5vw;
+    }
+
+    .user {
+        font-size: 2.5vw;
+    }
+
+    .button-delete {
+        width: 15vw;
+        height: 5vw;
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+
+    /* create.blade.php */
+    .form {
+        width: 90vw;
+        margin: 5vw 5vw 0vw 5vw;
+    }
+
+    .input {
+        width: 90vw;
+        ;
+        resize: none;
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+    }
+
+    .button-cancel {
+        font-size: 2.5vw;
+        line-height: 6vw;
+        width: 18vw;
+        height: 6vw;
+        margin: 0.5vw 1vw 0 0;
+    }
+
+    .button-submit {
+        font-size: 2.5vw;
+        width: 18vw;
+        height: 6vw;
+        margin: 0.5vw 1vw 0 0;
+    }
+
+    /* show.blade.php */
+    .image-blog {
+        width: 90vw;
+        height: auto;
+        margin: 0 0 1vw 0;
+    }
+
+    .title-blog {
+        font-size: 5vw;
+    }
+
+    .date-blog {
+        font-size: 3vw;
+    }
+
+    .user-blog {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .text-blog {
+        font-size: 3vw;
+    }
+
+    /* comment */
+    .comment-container {
+        margin: 2.5vw 0 2.5vw 0;
+    }
+
+    .comment-form {
+        margin: 0 0 2vw 0;
+    }
+
+    .title-comment-form {
+        font-size: 3vw;
+    }
+
+    .comment-input {
+        width: 90vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin: 0 0 0.25vw 0;
+    }
+
+    .comment-title {
+        font-size: 3vw;
+        margin: 4vw 0 0 0;
+    }
+
+    .comment {
+        width: 90vw;
+        margin: 2vw 0 5vw 0;
+        padding: 2vw;
+        box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+    }
+
+    .link {
+        font-size: 3vw;
+    }
+}
